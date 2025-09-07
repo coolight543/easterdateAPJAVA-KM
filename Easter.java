@@ -1,9 +1,14 @@
 // Kuang Miao
 // This program will calculate the date of Easter in each years
+
+import java.util.Scanner;
+
 public class Easter{
     public static void main(String[] args){
         // code goes here
-        int y = 2003;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a year number after 1583 ");
+        int y = scanner.nextInt();
         int a = y%19;
         int b = y/100;
         int c = y%100;
