@@ -22,7 +22,7 @@ public class Easter{
         int r = (32 + 2 * e + 2* i - h - k)%7;
         int m = (a+11*h+22*r)/451;
         int n = (h+r-7*m+114)/31;
-        int p = (h+r-7*m+114)%31; 
+        int p = (h+r-7*m+114)%31+1; 
         System.out.print("a = " +a);
         System.out.print(" b = " +b);
         System.out.print(" c = " +c);
@@ -37,8 +37,8 @@ public class Easter{
         System.out.print(" m = " +m);
         System.out.print(" n = " +n);
         System.out.print(" p = " +p);
-        System.out.print(" y = " +y);
-     
+        System.out.print(" y = " +y); 
+        System.out.print("\nThe Easter date is (dd/mm/yyyy) " + n + "/" + p +"/" + y + ". ");    
     }
 
 }
